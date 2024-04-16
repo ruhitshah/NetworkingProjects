@@ -1,0 +1,9 @@
+int range fa0/2-5
+switchport mode access
+switchport mode security maximum 1
+switchport port-security mac-address sticky
+switchport port-security violation shutdown
+int  range fa0/6-24, gig0/1-2
+switchport mode access
+switchport access vlan 99
+shutdown

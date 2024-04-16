@@ -1,0 +1,70 @@
+#####HQ NETWORK#####
+
+-----For HR dept(64 addresses)
+Net and Subnet Mask-192.168.20.0/26
+Valid Host Address-192.168.20.1 to 192.168.20.62
+Default Gateway-192.168.20.1
+Broadcast Address-192.168.20.63
+
+-----For CS dept(64 Addresses)
+Net and Subnet Mask-192.168.20.64/26
+Valid Host Address-192.168.20.65 to 192.168.20.126
+Default Gateway-192.168.20.65
+Broadcast Address-192.168.20.127
+
+----For MK dept(64 Addresses)
+Net and Subnet Mask-192.168.20.128/26
+Valid Host Address-192.168.20.129 to 192.168.20.190
+Default Gateway-192.168.20.129
+Broadcast Address-192.168.20.191
+
+
+----For LM dept(32 Addresses)
+Net and Subnet Mask-192.168.20.192/27
+Valid Host Address-192.168.20.193 to 192.168.20.222
+Default Gateway-192.168.20.193
+Broadcast Address-192.168.20.223
+
+----For IT dept(32 Addresses)
+Net and Subnet Mask-192.168.20.224/27
+Valid Host Address-192.168.20.225 to 192.168.20.254
+Default Gateway-192.168.20.225
+Broadcast Address-192.168.20.255
+
+
+
+#####Server-Side-Site#####
+
+
+-----Server-Side-LAN
+
+Net and Subnet Mask-192.168.22.0/28
+Valid Host Address-192.168.22.1 to 192.168.22.15
+Default Gateway-192.168.22.1
+Broadcast Address-192.168.22.15
+
+
+#####Between Routers And Layer3 Switches#####
+
+-------HQ-MLSW1
+Network Address-192.168.22.16/30
+
+-------HQ-MLSW2
+Network Address-192.168.22.20/30
+
+#####Between Routers And IPS's
+
+----HQR-SafaricomISP
+Network Address-190.200.100.0/30
+----HQR-JTLISP
+Network Address-190.200.100.4/30
+----SVR-SafaricomISP
+Network Address-190.200.100.8/30
+----SVR-JTLISP
+Network Address-190.200.100.12/30
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+int range gig0/0-1
+ip nat inside
+exit
+int se0/2/0
+ip nat outside
+int se0/2/1
+ip nat outside
+exit
+access-list 50 permit 192.168.20.0 0.0.0.255
+ip nat inside source list 50 interface se0/2/0 overload
+ip nat inside source list 50 interface se0/2/1 overload
+do wr

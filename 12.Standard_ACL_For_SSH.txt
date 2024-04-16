@@ -1,0 +1,6 @@
+ssh -l cisco 192.168.22.1
+access-list 10 permit 192.168.20.224 0.0.0.31
+access-list 10 deny any
+line vty 0 15
+access-class 10 in
+exit

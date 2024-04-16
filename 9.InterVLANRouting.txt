@@ -1,0 +1,24 @@
+int vlan 10
+ip add 192.168.20.1 255.255.255.192
+ip helper-address 192.168.22.5
+ex
+
+int vlan 20
+ip add 192.168.20.65 255.255.255.192
+ip helper-address 192.168.22.5
+ex
+
+int vlan 30
+ip add 192.168.20.129 255.255.255.192
+ip helper-address 192.168.22.5
+ex
+
+int vlan 40
+ip add 192.168.20.193 255.255.255.224
+ip helper-address 192.168.22.5
+ex
+
+int vlan 50
+ip add 192.168.20.225 255.255.255.224
+ip helper-address 192.168.22.5
+ex

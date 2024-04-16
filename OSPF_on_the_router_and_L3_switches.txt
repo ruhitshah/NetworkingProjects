@@ -1,0 +1,52 @@
+-------HQ-MLSW1
+ip routing
+router ospf 10
+router-id 1.1.1.1
+network 10.10.10.0 0.0.0.255 area 0
+network 192.168.22.16 0.0.0.3 area 0
+network 192.168.20.0 0.0.0.255 area 0
+
+-------HQ-MLSW1
+ip routing
+router ospf 10
+router-id 2.2.2.2
+network 10.10.10.0 0.0.0.255 area 0
+network 192.168.22.20 0.0.0.3 area 0
+network 192.168.20.0 0.0.0.255 area 0
+
+------HQ-VOiP Router
+router ospf 10
+router id 3.3.3.3
+network 10.10.10.0 0.0.0.255 area 0
+
+-------HQ-Router
+router ospf 10
+router-id 4.4.4.4
+network 192.168.22.16 0.0.0.3 area 0
+network 192.168.22.20 0.0.0.3 area 0
+network 190.200.100.0 0.0.0.3 area 0
+network 190.200.100.4 0.0.0.3 area 0
+
+
+-------Safaricom-ISP
+router ospf 10
+router-id 5.5.5.5
+network 190.200.100.0 0.0.0.3 area 0
+network 190.200.100.8 0.0.0.3 area 0
+
+-------JTL-ISP
+
+router ospf 10
+router-id 6.6.6.6
+network 190.200.100.4 0.0.0.3 area 0
+network 190.200.100.12 0.0.0.3 area 0
+
+------Server_side-Router
+router ospf 10
+router-id 7.7.7.7
+network 190.200.100.8 0.0.0.3 area 0
+network 190.200.100.12 0.0.0.3 area 0
+network 192.168.22.0 0.0.0.15 area 0
+
+do sh ip ospf neigh
+

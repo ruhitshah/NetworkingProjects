@@ -1,0 +1,120 @@
+----For HR dept.
+vlan 10
+name data
+vlan 120
+name VOICE
+exit
+int range fa0/1-2
+switchport mode trunk
+exit
+int range fa0/3-24
+switchport mode access
+switchport access vlan 10
+switchport voice vlan 120
+exit
+do wr
+
+----For CS dept.
+vlan 20
+name data
+vlan 120
+name VOICE
+exit
+int range fa0/1-2
+switchport mode trunk
+exit
+int range fa0/3-24
+switchport mode access
+switchport access vlan 20
+switchport voice vlan 120
+exit
+do wr
+
+----For MK dept.
+vlan 30
+name data
+vlan 120
+name VOICE
+exit
+int range fa0/1-2
+switchport mode trunk
+exit
+int range fa0/3-24
+switchport mode access
+switchport access vlan 30
+switchport voice vlan 120
+exit
+do wr
+
+----For LM dept.
+vlan 40
+name data
+vlan 120
+name VOICE
+exit
+int range fa0/1-2
+switchport mode trunk
+exit
+int range fa0/3-24
+switchport mode access
+switchport access vlan 40
+switchport voice vlan 120
+exit
+do wr
+
+----For IT dept.
+vlan 50
+name data
+vlan 120
+name VOICE
+exit
+int range fa0/1-2
+switchport mode trunk
+exit
+int range fa0/3-24
+switchport mode access
+switchport access vlan 50
+switchport voice vlan 120
+exit
+do wr
+
+
+------For HQ-MLSW1
+int range gig1/0-7
+switchport mode trunk
+exit
+vlan 10
+name HR
+vlan 20
+name CS
+vlan 30
+name MK
+vlan 40
+name LM
+vlan 50
+name IT
+vlan 120
+name VOICE
+exit
+do wr
+
+------For HQ-MLSW2
+int range gig1/0-6
+switchport mode trunk
+exit
+vlan 10
+name HR
+vlan 20
+name CS
+vlan 30
+name MK
+vlan 40
+name LM
+vlan 50
+name IT
+vlan 120
+name VOICE
+exit
+do wr
+
+

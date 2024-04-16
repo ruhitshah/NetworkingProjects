@@ -1,0 +1,6 @@
+int s0/2/0
+ip add 190.200.100.6
+no shut
+int s0/2/1
+ip add 190.200.100.14
+no shut

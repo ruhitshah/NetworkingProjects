@@ -1,0 +1,45 @@
+----HQ-VOiP Router
+service dhcp
+ip dhcp pool VOICE
+network 10.10.10.0 255.255.255.0
+default-router 10.10.10.1
+option 150 ip 10.10.10.1
+dns-server 10.10.10.1
+exit
+ip dhcp excluded-address 10.10.10.1
+telephony-service
+max-ephones 20
+max-dn 20
+ip source-address 10.10.10.1 port 2000
+auto assign 1 to 20
+exit
+ephone-dn 1
+number 401
+exit
+ephone-dn 2
+number 402
+exit
+ephone-dn 3
+number 403
+exit
+ephone-dn 4
+number 404
+exit
+ephone-dn 5
+number 405
+exit
+ephone-dn 6
+number 406
+exit
+ephone-dn 7
+number 407
+exit
+ephone-dn 8
+number 408
+exit
+ephone-dn 9
+number 409
+exit
+ephone-dn 10
+number 410
+exit

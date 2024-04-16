@@ -1,0 +1,5 @@
+interface fa0/0.120
+encapsulation dot1Q 120
+ip address 10.10.10.1 255.255.255.0
+no shut
+exit

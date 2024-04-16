@@ -1,0 +1,15 @@
+1.Network Design and Beautification.
+2.Basic settings to all devices plus ssh on the routers and L3 switches.
+3.VLANs(for Data and VOICE) assignment plus all access and trunk ports on L2 and L3 switches.
+4.Switchport security to server-side site dept.
+5.Subnetting and IP addressing.
+6.OSPF on the router and L3 switches.
+7.Static IP address to serverroom devices.
+8.DHCP server device configurations.
+9.Inter-VLAN routing on the L3 switches plus IP DHCP helper address.
+10.Wireless network configuration.
+11.Telephony service configuration.
+12.Standard ACL for ssh.
+13.PAT+Access control list.
+14.Site-to-site IPsec VPN+ACL.
+15.Verifying and testing configuration. 

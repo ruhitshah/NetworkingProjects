@@ -1,0 +1,16 @@
+---HR
+AP-SSID-HR
+   Pass:12345678
+
+----CS
+AP-SSID-CS
+   Pass:12345678
+----MK
+MK-SSID-MK
+   Pass:12345678
+----LM
+LM-SSID-LM
+   Pass:12345678
+----IT
+IT-SSID-IT
+   Pass:12345678	

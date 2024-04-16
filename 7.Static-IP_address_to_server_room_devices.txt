@@ -1,0 +1,6 @@
+DHCP-192.168.22.5
+DNS-192.168.22.6
+WebServer-192.168.22.7
+EmailServer-192.168.22.8
+Default_Gateway-192.168.22.1
+Subnet_Mask-255.255.255.240
